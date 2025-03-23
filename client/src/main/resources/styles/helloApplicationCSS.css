@@ -1,8 +1,28 @@
 .label {
-    -fx-font-size: 24px;
-    -fx-text-fill: 5E6F64;
+    -fx-font-size: 36px;
+    -fx-text-fill: #7B68EE;
+    -fx-font-style: italic;
+    -fx-font-weight: 900;
+    -fx-effect: dropshadow(one-pass-box, #EE82EE, 7, 1.0, 3, 3);
 }
 
 .root {
-    -fx-background-color: E9ECEF; /* Цвет фона */
+    -fx-background-color: #E9ECEF /* Цвет фона */
 }
+
+.button {
+    -fx-border-radius: 10px;
+    -fx-text-fill: #E9ECEF;
+    -fx-background-color: #EE82EE;
+    -fx-font-style: italic, bold;
+    -fx-font-weight: 900;
+    -fx-font-size: 20px;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, #9370DB, 5, 0.5, 2, 2);
+    -fx-top: -5px;
+    -fx-left: -5px;
+}
+
+

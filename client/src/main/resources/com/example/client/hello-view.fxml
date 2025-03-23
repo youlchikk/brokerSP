@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.client.HelloController" hgap="10" vgap="10">
+    <columnConstraints>
+        <ColumnConstraints prefWidth="400" />
+        <ColumnConstraints prefWidth="200" />
+        <ColumnConstraints prefWidth="200" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="150" />
+        <RowConstraints prefHeight="150" />
+        <RowConstraints prefHeight="150" />
+        <RowConstraints prefHeight="150" />
+    </rowConstraints>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.client.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+    <Label text="НАЧАЛО РАБОТЫ" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
 
-</VBox>
+    <Button fx:id="buttonLogUser" text="Войти" onAction="#handleLogUser" prefWidth="300" prefHeight="75" GridPane.rowIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+    <Button fx:id="buttonRegister" text="Зарегистрироваться" onAction="#handleRegister" prefWidth="300" prefHeight="75" GridPane.rowIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+    <Button fx:id="buttonLogAdmin" text="Войти администратором" onAction="#handleLogAdmin" prefWidth="300" prefHeight="75" GridPane.rowIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="CENTER" />
+
+    <ImageView fx:id="imageView1" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.halignment="LEFT" rotate="15" />
+    <ImageView fx:id="imageView2" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.halignment="RIGHT" rotate="-10" />
+    <ImageView fx:id="imageView3" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.halignment="CENTER" rotate="-5" />
+</GridPane>
