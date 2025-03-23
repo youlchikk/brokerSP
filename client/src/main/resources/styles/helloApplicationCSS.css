@@ -1,0 +1,8 @@
+.label {
+    -fx-font-size: 24px;
+    -fx-text-fill: 5E6F64;
+}
+
+.root {
+    -fx-background-color: E9ECEF; /* Цвет фона */
+}
